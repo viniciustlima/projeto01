@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+:root {
+	--centerw: 1280px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.center {
+	width: 100%;
+	max-width: var(--centerw);
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background: #212343;
+}
+
+header img {
+	margin: 15px;
+}
+
+section.banner {
+	width: 100%;
+	height: 557px;
+	background-image: url("../images/header_bg.png");
+	background-size: cover;
+	background-position: center;
+}
+
+section.banner .center {
+	height: 100%;
+}
+
+section.banner form {
+	width: 400px;
+	height: calc(100% + 30px);
+	background: #ffffff;
+	border: 8px solid rgba(204, 204, 204, .7);
+	float: right;
+	padding: 10px 15px;
+	text-align: left;
+	position: relative;
+	top: -15px;
+	background-clip: padding-box;
+}
+
+section.banner form h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #999999;
+}
+
+section.banner form .input-box {
+	margin-top: 20px;
+}
+
+section.banner form .input-box label,
+section.banner form p.warn {
+	width: 100%;
+	display: inline-block;
+	font-size: 17px;
+	color: #bbb;
+}
+
+section.banner form p.warn {
+	margin: 20px 0;
+}
+
+section.banner form .input-box input[type=text],
+section.banner form .input-box input[type=email],
+section.banner form .input-box input[type=tel] {
+	width: 100%;
+	height: 55px;
+	border: 1px solid #cccccc;
+	padding: 0 15px;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+section.banner form .input-box:last-child {
+	text-align: center;
+}
+
+section.banner form .input-box input[type=submit] {
+	display: inline-block;
+	width: 280px;
+	height: 56px;
+	background-color: #363a6d;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-right: 5px solid #4a5097;
+	border-bottom: 5px solid #4a5097;
+	transition: .15s;
+}
+
+section.banner form .input-box input[type=submit]:hover {
+	background-color: #323655;
+}
+
+section.banner .list {
+	width: 540px;
+	height: 270px;
+	float: left;
+	text-align: left;
+	margin-top: 120px;
+	padding: 25px;
+	background: rgba(33, 35, 67, 0.7);
+}
+
+section.banner .list ul {
+	list-style-position: inside;
+}
+
+section.banner .list li {
+	color: #ffffff;
+	margin-top: 15px;
+}
+
+section.chamada {
+	padding-top: 50px;
+	background: #dddddd;
+	text-align: center;
+}
+
+section.chamada h2 {
+	font-weight: normal;
+}
+
+section.chamada p {
+	margin: 15px 0;
+	width: 100%;
+	max-width: 700px;
+	padding: 0 2%;
+	display: inline-block;
+	text-align: justify;
+}
+
+section.chamada .arrow {
+	width: 64px;
+	height: 64px;
+	background-image: url("../images/arrow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	position: relative;
+	top: 32px;
+}
+
+section.final {
+	padding: 70px 0 30px;
+	text-align: center;
+}
+
+section.final h2 {
+	font-size: 24px;
+	color: #462663;
+	font-weight: normal;
+}
+
+section.final .container {
+	margin-top: 40px;
+	text-align: center;
+}
+
+section.final .container .box {
+	float: left;
+	width: 33.3%;
+	padding: 30px;
+}
+
+section.final .container .box img {
+	width: 70px;
+}
+
+section.final .container .box p {
+	display: inline-block;
+	text-align: justify;
+	padding: 10px 25px;
+}
+
+footer {
+	padding: 30px 0;
+	border-top: 3px solid #888888;
+	text-align: center;
+}
+
+footer p {
+	margin-top: 8px;
+	color: #888;
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		height: auto;
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	header img {
+		margin: 0;
+	}
+
+	section.banner {
+		height: auto;
+		padding: 40px 2%;
+		text-align: center
+	}
+
+	section.banner .list {
+		width: 90%;
+		max-width: 400px;
+		height: auto;
+		margin-top: 0;
+		margin-bottom: 30px;
+		display: inline-block;
+		float: none;
+	}
+
+	section.banner form {
+		width: 90%;
+		max-width: 400px;
+		height: 100%;
+		display: inline-block;
+		float: none;
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	section.final .container .box {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	section.final .container .box {
+		width: 100%;
+	}
+}
